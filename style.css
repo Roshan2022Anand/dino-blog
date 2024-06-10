@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+:root{
+    --high-light:#9b8e71;
+    --bold:rgb(0, 0, 0);
+    --light:#875c0021;
+}
+#fixedImg {
+    width: 99vw;
+    height: 99vh;
+    display: block;
+    margin: 0 auto;
+}
+
+#logo {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    transition: background-image 1s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+aside{
+    background-color: white;
+}
+
+article{
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+}
+article:hover{
+    background-color: var(--light);
+}
+.date{
+    font-weight: bolde;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.head{
+    color: var(--high-light);
+    font-weight: bolder;
+    font-size: 30px;
+}
+.info,p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+summary{
+    color: var(--high-light);
+    border: 2px solid var(--high-light);
+    display: inline-block;
+    padding: 5px;
+
+}
+
+
+
+@media screen and (min-width: 900px) {
+    main {
+        position: relative;
+    }
+
+    #fixedImg {
+        width: 50vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 99;
+    }
+    #dinoInfo{
+        padding: 15px;
+        position: absolute;
+        right: 0;
+        /* padding-left:10px ; */
+        width: 50vw;
+    }
+
+}
